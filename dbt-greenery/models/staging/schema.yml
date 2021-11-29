@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: stg_users
+    description: "users information including names, emails, phone_number, address_id, creation date"
+
+  - name: stg_orders
+    description: "order info with order_id, promo_id, user_id, address_id, and order and chipping costs"
+
+  - name: stg_events
+    description: "events with user_guid, session_guid, page_url, created_at, and event_type"
+
+  - name: stg_order_items
+    description: "documents one order id with one product id and its ordered quantities"
+
+  - name: stg_products
+    description: "products with name, price, amd quantity"
+  
+  - name: stg_promos
+    description: "promos with discount and status"

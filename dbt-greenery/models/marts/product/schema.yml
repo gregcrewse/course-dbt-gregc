@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: Contains event level information for every page view tracked by greenery
+    columns: 
+      - name: event_id
+        description: unique id for each event tracked
+        tests: 
+          - unique
+          - not_null
+      - name: session_id
+        description: unique id to track the session_id
+        tests:
+          - not_null
+      - name: user_id
+        description: id to track the user. 
+        tests:
+          - not_null
+      - name: created_at_utc
+        description: the date and time when the event occured in UTC
+        tests:
+          - not_null   
