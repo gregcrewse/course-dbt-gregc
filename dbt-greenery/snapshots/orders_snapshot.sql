@@ -11,6 +11,6 @@
   }}
 
   SELECT * 
-  FROM {{ source('tutorial', 'orders') }}
+  FROM {{ source('greenery', 'orders') }}
 
 {% endsnapshot %}

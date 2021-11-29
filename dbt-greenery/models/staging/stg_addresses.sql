@@ -10,4 +10,4 @@ SELECT
     zipcode,
     state,
     country
-FROM {{ source('tutorial', 'addresses') }}
+FROM {{ source('greenery', 'addresses') }}

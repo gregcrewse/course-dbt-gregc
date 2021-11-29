@@ -8,4 +8,4 @@ SELECT
     promo_id,
     discout as discount,
     status
-FROM {{ source('tutorial', 'promos') }}
+FROM {{ source('greenery', 'promos') }}
